@@ -29,6 +29,10 @@ body{
 	transition-timing-function: ease;
 }
 
+.even, .odd {
+	background-size: 512.5px 524px !important;
+}
+
 .p1 .side {
 	width:5px;
 	height:600px;
@@ -64,7 +68,7 @@ body{
 
 
 /* page inner shadow */
-#odd::before {
+.odd::before {
 	position:absolute;
 	top:0;
 	left:0;
