@@ -1,5 +1,6 @@
 body{
-	background:url(../img/bgtexture.jpg) repeat;
+	background:url(../img/bgDark.jpg) no-repeat;
+	background-size: cover;
 }
 
 .container {
