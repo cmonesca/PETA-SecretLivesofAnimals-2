@@ -10,7 +10,7 @@ $(window).ready(function() {
     gradients: true,
     autoCenter: true,
     duration: 1000,
-    pages: 25,
+    pages: 17,
     when: {
       turning: function(e, page) {
         if(page>1) {
