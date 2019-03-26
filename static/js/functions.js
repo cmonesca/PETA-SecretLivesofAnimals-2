@@ -8,7 +8,7 @@ $(window).ready(function() {
     elevation: 50,
     acceleration: true,
     gradients: true,
-    autoCenter: true,
+    autoCenter: false,
     duration: 1000,
     pages: 17,
     when: {
