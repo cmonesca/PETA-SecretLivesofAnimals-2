@@ -24,7 +24,7 @@ body{
 		font-weight: 300;
 		height: 4em;
 		width: 100%;
-		margin-bottom: 4em;
+		margin-bottom: 1em;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -70,11 +70,25 @@ body{
 		font-weight: 700 !important;
 	}
 
+	/* INTRO TEXT */
+	#introText {
+		width: 512px;
+		position: absolute;
+		right: 50%;
+    top: 13em;
+	}
+
+	#introText img {
+		width: 100%;
+	}
+
 
 	/* FLIPBOOK */
 	.container {
 		display: flex;
 		align-items: center;
+		right: 5%;
+		position: absolute;
 	}
 
 	#petaBook{
