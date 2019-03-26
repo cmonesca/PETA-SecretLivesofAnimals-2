@@ -1,6 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+
+/* UNIVERSAL STYLES */
 body{
+	background-color: #f8f8f8;
+	margin: none !important;
+}
+
+/* HOME PAGE STYLES */
+#homePage {
 	background:url(../img/bgDark.jpg) no-repeat;
 	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+#navContainer {
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: white;
+	font-weight: 300;
+	height: 4em;
+	width: 100%;
+	margin-bottom: 4em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#navContainer .nav {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-left: auto;
+	padding-right: 2%;
+}
+
+#navContainer .logo {
+	height: 4em;
+}
+
+#navContainer .logo img {
+	width: 10em;
+	margin-top: -9px;
+}
+
+.nav li {
+	margin-left: 1em;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav li a:hover {
+	text-decoration: underline;
+}
+
+.nav li:not(:last-child) {
+	border-right: 2px solid white;
+	padding-right: 15px;
+}
+
+.currentPage {
+	font-weight: 700 !important;
 }
 
 .container {
@@ -113,9 +178,29 @@ body{
 	-o-transition: -webkit-box-shadow 0.5s;
 	-ms-transition: -ms-box-shadow 0.5s;
 
-	-webkit-box-shadow:0 0 20px #ccc;
-	-moz-box-shadow:0 0 20px #ccc;
-	-o-box-shadow:0 0 20px #ccc;
-	-ms-box-shadow:0 0 20px #ccc;
-	box-shadow:0 0 20px #ccc;
+	-webkit-box-shadow:0 0 20px #333333;
+	-moz-box-shadow:0 0 20px #333333;
+	-o-box-shadow:0 0 20px #333333;
+	-ms-box-shadow:0 0 20px #333333;
+	box-shadow:0 0 20px #333333;
+}
+
+
+/* FACTS PAGE STYLES */
+#factsPage .nav li a {
+	color: black;
+}
+
+#factsPage .nav li:not(:last-child) {
+		border-right: 2px solid black;
+}
+
+
+/* HELP PAGE STYLES */
+#helpPage .nav li a {
+	color: black;
+}
+
+#helpPage .nav li:not(:last-child) {
+		border-right: 2px solid black;
 }
