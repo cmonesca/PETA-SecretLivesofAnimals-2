@@ -134,7 +134,7 @@ body{
 		height: 524px;
 		position: absolute;
 		left: 18px;
-		/* z-index: -1; */
+    border-radius: 2px;
 		-webkit-transition: 0.5s;
 		transition: 0.5s;
 		transition-timing-function: ease;
@@ -175,6 +175,7 @@ body{
 	#soundBar img {
 		width: 128px;
 		height: 524px;
+		border-radius: 0px 2px 2px 0px;
 	}
 
 	.sound-bar {

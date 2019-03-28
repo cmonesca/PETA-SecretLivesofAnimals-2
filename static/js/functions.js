@@ -20,6 +20,7 @@ $(window).ready(function() {
         } else {
           $('#petaBookBg').removeClass('peta-book-bg');
           $('#soundBar').removeClass('margin-left');
+          $('.container').removeClass('changed');
         }
         if(page!==1) {
           $('#introText').addClass('display-none');
