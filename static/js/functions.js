@@ -16,9 +16,15 @@ $(window).ready(function() {
         if(page>1) {
           $('#petaBookBg').addClass('peta-book-bg');
           $('#soundBar').addClass('margin-left');
+          $('.container').addClass('changed');
         } else {
           $('#petaBookBg').removeClass('peta-book-bg');
           $('#soundBar').removeClass('margin-left');
+        }
+        if(page!==1) {
+          $('#introText').addClass('display-none');
+        } else {
+          $('#introText').removeClass('display-none');
         }
       }
     }

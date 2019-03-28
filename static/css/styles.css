@@ -28,7 +28,6 @@ body{
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		z-index: 999;
 	}
 
 	#navContainer .nav {
@@ -37,6 +36,7 @@ body{
 		list-style: none;
 		margin-left: auto;
 		padding-right: 2%;
+		z-index: 1;
 	}
 
 	#navContainer .logo {
@@ -92,10 +92,34 @@ body{
 		position: absolute;
 	}
 
+
+	/* BOOK SHADOW */
+	.container::before {
+		content: '';
+		background-image: url(../img/shadow-closed.png);
+		background-size: contain;
+		width: 831px;
+    height: 700px;
+    right: -7%;
+		position:absolute;
+	}
+
+	.container.changed::before {
+		content: '';
+		background-image: url(../img/shadow-open.png);
+		width: 100vw;
+		height: 100vh;
+		background-size: 1446px 770px;
+		background-position: -230% 39%;
+		background-repeat: no-repeat;
+	}
+
 	#petaBook{
 		display: block;
 		left: 1.8rem;
+		z-index: 1;
 	}
+
 	#petaBook .turn-page{
 		background-color:lightblue;
 		background-size:100% 100%;
@@ -114,6 +138,10 @@ body{
 		-webkit-transition: 0.5s;
 		transition: 0.5s;
 		transition-timing-function: ease;
+	}
+
+	.peta-book-bg-override {
+		background-image:url(../img/book-bg-full-3.jpg), url(../img/sound-bar-2.png);
 	}
 
 	.even, .odd {
@@ -163,6 +191,11 @@ body{
 		visibility: visible !important;
 	}
 
+	.display-none {
+		display: none;
+	}
+
+
 	.odd .page {
 		width: 513px;
 		height: 524px;
@@ -173,33 +206,6 @@ body{
 		height: 524px;
 	}
 
-
-	/* page inner shadow */
-	.odd .gradient {
-		position:absolute;
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
-		background-image:url(../img/left-border-2.png);
-		background-position:left top;
-		z-index: 999;
-		background-repeat: repeat-y;
-		overflow: hidden;
-	}
-
-	.even .gradient {
-		position:absolute;
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
-		background-image:url(../img/right-border-2.png);
-		background-position:right top;
-		z-index: 999;
-		background-repeat: repeat-y;
-		overflow: hidden;
-	}
 	/*
 	.container .shadow{
 		-webkit-transition: -webkit-box-shadow 0.5s;
@@ -230,6 +236,7 @@ body{
 		align-items: center;
 		bottom: 1em;
 		position: absolute;
+		z-index: 999;
 	}
 
 	#footer .footnav {
