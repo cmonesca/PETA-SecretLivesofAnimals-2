@@ -88,6 +88,8 @@ $(window).ready(function() {
     }
   })
 
+  introJs().start();
+
 });
 
 // allows keyboard arrows to turn pages
