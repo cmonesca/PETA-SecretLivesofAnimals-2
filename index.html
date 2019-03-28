@@ -7,9 +7,28 @@
     	<link href="static/css/styles.css" rel="stylesheet">
       <link href="static/css/normalize.css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     	<title>The Secret Lives of Animals - PETA</title>
+
+      <meta property="og:url"           content="/" />
+      <meta property="og:type"          content="website" />
+      <meta property="og:title"         content="The Secret Lives of Animals" />
+      <meta property="og:description"   content="The first sound book that shows you how animals really sound." />
+      <meta property="og:image"         content="static/img/fb-share-image.jpg" />
     </head>
+
     <body>
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+
       <section id="homePage">
         <!-- NAV BAR -->
         <section id="navContainer">
@@ -74,10 +93,38 @@
         <section id="footer">
           <div class="sound">Sound On <i class="fas fa-volume-up"></i></div>
           <ul class="footnav">
-            <li>Share</li>
-            <li><i class="fab fa-facebook-square"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
+            <li style="margin-top: auto;margin-bottom: auto;">Share</li>
+            <!-- <li><i class="fab fa-facebook-square"></i></li> -->
+            <li>
+              <div class="fb-share-button"
+              data-href="https://developers.facebook.com/docs/plugins/"
+              data-layout="button"
+              data-size="large">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                  class="fb-xfbml-parse-ignore">
+                    Share
+                </a>
+              </div>
+
+            </li>
+            <li>
+              <a class="twitter-share-button custom-share"
+                  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                  data-size="large"
+                  data-text="custom share text"
+                  data-url="https://dev.twitter.com/web/tweet-button"
+                  data-hashtags="example,demo"
+                  data-via="twitterdev"
+                  data-related="twitterapi,twitter"
+                  data-show-count="false">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            </li>
+            <!-- <li><i class="fab fa-instagram"></i></li> -->
           </ul>
         </section>
 
