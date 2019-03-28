@@ -15,8 +15,27 @@
       <meta property="og:title"         content="The Secret Lives of Animals" />
       <meta property="og:description"   content="The first sound book that shows you how animals really sound." />
       <meta property="og:image"         content="static/img/fb-share-image.jpg" />
+
+      <script type="text/javascript">
+        $(window).load(function() {
+          $(".loader").fadeOut("slow");
+        });
+      </script>
     </head>
+
     <body>
+      <!-- PAGE LOADING ANIMATION -->
+      <div class="loader">
+        <div class="center">
+          <div class="spinner">
+            <div class="spinner-bar bar"></div>
+            <div class="spinner-bar bar"></div>
+            <div class="spinner-bar bar"></div>
+            <div class="spinner-bar bar"></div>
+          </div>
+        </div>
+      </div>
+
       <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
@@ -27,15 +46,16 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
+
       <!-- PAGE CONTENT -->
       <section id="helpPage">
         <!-- NAV BAR -->
         <section id="navContainer">
-          <div class="logo"><a href="/"><img src="static/img/logo.png"></a></div>
+          <div class="logo"><a href="/"><img class="logo-noshadow" src="static/img/logo-noshadow.png"></a></div>
           <ul class="nav">
-            <li><a href="/">The Book</a></li>
-            <li><a href="facts.html">Sad But True Facts</a></li>
-            <li class="currentPage"><a href="#">How To Help</a></li>
+            <li><a href="/" alt="Home">The Book</a></li>
+            <li><a href="facts.html" alt="Sad But True Facts">Sad But True Facts</a></li>
+            <li class="currentPage"><a href="#" alt="How To Help">How To Help</a></li>
           </ul>
         </section>
 

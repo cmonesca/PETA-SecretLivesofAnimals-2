@@ -24,7 +24,17 @@
     </head>
 
     <body>
-      <div class="loader"></div>
+      <!-- PAGE LOADING ANIMATION -->
+      <div class="loader">
+        <div class="center">
+          <div class="spinner">
+            <div class="spinner-bar bar"></div>
+            <div class="spinner-bar bar"></div>
+            <div class="spinner-bar bar"></div>
+            <div class="spinner-bar bar"></div>
+          </div>
+        </div>
+      </div>
 
       <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
@@ -37,14 +47,15 @@
       }(document, 'script', 'facebook-jssdk'));</script>
 
 
+      <!-- PAGE CONTENT -->
       <section id="homePage">
         <!-- NAV BAR -->
         <section id="navContainer">
           <div class="logo"><a href="/"><img src="static/img/logo.png"></a></div>
           <ul class="nav">
-            <li class="currentPage"><a href="/">The Book</a></li>
-            <li><a href="facts.html">Sad But True Facts</a></li>
-            <li><a href="help.html">How To Help</a></li>
+            <li class="currentPage"><a href="/" alt="Home">The Book</a></li>
+            <li><a href="facts.html" alt="Sad But True Facts">Sad But True Facts</a></li>
+            <li><a href="help.html" alt="How To Help">How To Help</a></li>
           </ul>
         </section>
 
