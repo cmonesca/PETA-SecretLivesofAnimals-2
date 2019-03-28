@@ -132,12 +132,15 @@ body{
 	#introText {
 		width: 512px;
 		position: absolute;
-		right: 50%;
-    top: 13em;
+		align-self: center;
 	}
 
 	#introText img {
 		width: 100%;
+	}
+
+	.flex {
+    display: flex;
 	}
 
 
@@ -147,6 +150,7 @@ body{
 		align-items: center;
 		right: 5%;
 		position: absolute;
+		overflow: hidden;
 	}
 
 
@@ -195,6 +199,7 @@ body{
 		-webkit-transition: 0.5s;
 		transition: 0.5s;
 		transition-timing-function: ease;
+		display: block;
 	}
 
 	.peta-book-bg-override {

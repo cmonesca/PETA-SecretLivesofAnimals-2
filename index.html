@@ -63,8 +63,9 @@
 
         <!-- BOOK GOES HERE -->
         <section class="container">
-          <div id="petaBookBg"></div>
-          <div id="petaBook" class="book">
+          <div class="flex">
+            <div id="petaBookBg"></div>
+            <div id="petaBook" class="book">
               <div class="hard p1" depth="5">
                 <img class="page" src="pages/cover.jpg" data-intro='To get started, click or drag on the book corners. It opens like a real book!'/>
               </div>
@@ -90,6 +91,10 @@
               <div class="odd"><img class="page" src="pages/17.jpg"></div>
               <div class="even"><img class="page" src="pages/last-page.jpg"></div>
               <div class="hard odd" depth="5"><img class="page" src="pages/back.jpg"></div>
+            </div>
+            <section id="introText">
+              <img src="static/img/introText.png">
+            </section>
           </div>
           <aside id="soundBar" class="sounds sound-bar">
               <img src="static/img/sound-bar-2.png" usemap="#soundmap">
@@ -106,9 +111,6 @@
         </section>
 
         <!-- INTRO TEXT GOES HERE -->
-        <section id="introText">
-          <img src="static/img/introText.png">
-        </section>
 
         <!-- FOOTER BAR -->
         <section id="footer">
