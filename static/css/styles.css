@@ -60,7 +60,7 @@ body{
 
 /* HOME PAGE STYLES */
 #homePage {
-	background:url(../img/bgDark.jpg) no-repeat;
+	background:url(../img/bgDark2.jpg) no-repeat;
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
@@ -209,6 +209,28 @@ body{
 	.even, .odd {
 		background-size: 513px 524px !important;
 	}
+
+	/* PAGE CORNERS */
+  #triangle-topright {
+		top: 0;
+		right: 128px;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+		position: absolute;
+    z-index: 2;
+  }
+  #triangle-bottomright {
+		bottom: 0;
+		right: 128px;
+		width: 0;
+    height: 0;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+		position: absolute;
+    z-index: 2;
+  }
 
 	.p1 .side {
 		width:5px;
