@@ -145,7 +145,7 @@ body{
 
 
 	/* FLIPBOOK */
-	.container {
+	.bookContainer {
 		display: flex;
 		align-items: center;
 		right: 5%;
@@ -155,7 +155,7 @@ body{
 
 
 	/* BOOK SHADOW */
-	.container::before {
+	.bookContainer::before {
 		content: '';
 		background-image: url(../img/shadow-closed.png);
 		background-size: contain;
@@ -165,7 +165,7 @@ body{
 		position:absolute;
 	}
 
-	.container.changed::before {
+	.bookContainer.changed::before {
 		content: '';
 		background-image: url(../img/shadow-open.png);
 		width: 100vw;
@@ -292,7 +292,7 @@ body{
 	}
 
 	/*
-	.container .shadow{
+	.bookContainer .shadow{
 		-webkit-transition: -webkit-box-shadow 0.5s;
 		-moz-transition: -moz-box-shadow 0.5s;
 		-o-transition: -webkit-box-shadow 0.5s;
@@ -304,6 +304,74 @@ body{
 		-ms-box-shadow:0 0 20px #333333;
 		box-shadow:0 0 20px #333333;
 	} */
+
+	/* INTRO WALKTHROUGH MODAL */
+	#fvpp-blackout {
+		display: none;
+		z-index: 499;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: #000;
+		opacity: 0.5;
+	}
+
+	#my-welcome-message {
+		display: none;
+		z-index: 500;
+		position: fixed;
+		width: 50%;
+		left: 25%;
+		top: 20%;
+		padding: 4%;
+		font-family: 'Nunito', Arial, sans-serif;
+		background: #FFF;
+	}
+
+	#fvpp-close {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		cursor: pointer;
+	}
+
+	#fvpp-dialog h2 {
+		font-size: 2em;
+		margin: 0;
+	}
+
+	#fvpp-dialog p { margin: 0; }
+
+
+	.carousel-indicators .active {
+		background-color: #000 !important;
+	}
+
+	.carousel-indicators li {
+		background-color: rgba(0,0,0,.5) !important;
+	}
+
+	.carousel-indicators {
+		bottom: -45px !important;
+	}
+
+	.carousel-control-next-icon {
+		background-image: url("../img/angle-right-solid.svg") !important;
+	}
+
+	.carousel-control-next {
+		right: -75px !important;
+	}
+
+	.carousel-control-prev-icon {
+		background-image: url("../img/angle-left-solid.svg") !important;
+	}
+
+	.carousel-control-prev {
+		left: -75px !important;
+	}
 
 
 	/* FOOTER */

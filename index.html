@@ -1,13 +1,10 @@
 <!doctype html>
 <html>
     <head><meta charset="UTF-8">
-    	<script type="text/javascript" src="static/js/jquery-1.7.2.js"></script>
-    	<script type="text/javascript" src="static/js/turn.js"></script>
-    	<script type="text/javascript" src="static/js/functions.js"></script>
       <link href="static/css/normalize.css" rel="stylesheet">
     	<link href="static/css/styles.css" rel="stylesheet">
-      <!-- <link href="static/css/introjs.css" rel="stylesheet"> -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     	<title>The Secret Lives of Animals - PETA</title>
 
@@ -16,12 +13,6 @@
       <meta property="og:title"         content="The Secret Lives of Animals" />
       <meta property="og:description"   content="The first sound book that shows you how animals really sound." />
       <meta property="og:image"         content="static/img/fb-share-image.jpg" />
-
-      <script type="text/javascript">
-        $(window).load(function() {
-          $(".loader").fadeOut("slow");
-        });
-      </script>
     </head>
 
     <body>
@@ -61,7 +52,7 @@
         </section>
 
         <!-- BOOK GOES HERE -->
-        <section class="container">
+        <section class="bookContainer">
           <div class="flex">
             <div id="petaBookBg"></div>
             <div id="petaBook" class="book">
@@ -96,12 +87,9 @@
             <section id="introText">
               <img src="static/img/introText.png">
             </section>
-            <!-- <div id="pageCorners" >
-              <div id="triangle-topright" data-intro='To get started, click or drag on the book corners. It opens like a real book!'></div>
-              <div id="triangle-bottomright" data-intro='You can click either corner.'></div>
-            </div> -->
           </div>
-          <aside id="soundBar" class="sounds sound-bar" data-intro='Click any button on the sound bar to hear the animals. Click again to stop the sound.'>
+
+          <aside id="soundBar" class="sounds sound-bar">
               <img src="static/img/sound-bar-3.jpg" usemap="#soundmap">
 
               <map name="soundmap">
@@ -115,11 +103,9 @@
           </aside>
         </section>
 
-        <!-- INTRO TEXT GOES HERE -->
-
         <!-- FOOTER BAR -->
         <section id="footer">
-          <div class="sound">Sound On <i class="fas fa-volume-up"></i></div>
+          <div class="sound">Sound On <i class="fas fa-volume-up"></i><p><a id="show-message">Show intro again</a></p></div>
           <ul class="footnav">
             <li style="margin-top: auto;margin-bottom: auto;">Share</li>
             <!-- <li><i class="fab fa-facebook-square"></i></li> -->
@@ -155,9 +141,80 @@
             <!-- <li><i class="fab fa-instagram"></i></li> -->
           </ul>
         </section>
-
       </section>
 
-      <script type="text/javascript" src="static/js/intro.js"></script>
+      <!-- INTRO TEXT GOES HERE -->
+      <div id="my-welcome-message">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div style="padding-right: 10px; flex-basis: 50%;">
+                  <h3>First Slide</h3>
+                  <p>Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.</p>
+                </div>
+                <div style="flex-basis: 50%;">
+                  <img class="d-block w-100" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" alt="First slide">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="display: flex; flex-direction: row;">
+                <div style="padding-right: 10px; flex-basis: 50%;">
+                  <h3>Second Slide</h3>
+                  <p>Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.</p>
+                </div>
+                <div style="flex-basis: 50%;">
+                  <img class="d-block w-100" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" alt="First slide">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="display: flex; flex-direction: row;">
+                <div style="padding-right: 10px; flex-basis: 50%;">
+                  <h3>Third Slide</h3>
+                  <p>Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.</p>
+                </div>
+                <div style="flex-basis: 50%;">
+                  <img class="d-block w-100" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" alt="First slide">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- PAGE SCRIPTS -->
+      <script type="text/javascript" src="static/js/jquery-1.7.2.js"></script>
+    	<script type="text/javascript" src="static/js/turn.js"></script>
+    	<script type="text/javascript" src="static/js/functions.js"></script>
+      <script type="text/javascript" src="static/js/jquery.firstVisitPopup.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script type="text/javascript">
+        $(window).load(function() {
+          $(".loader").fadeOut("slow");
+        });
+
+        $(window).load(function() {
+          $('#my-welcome-message').firstVisitPopup({
+            cookieName : 'homepage',
+            showAgainSelector: '#show-message'
+          });
+        });
+      </script>
     </body>
 </html>
