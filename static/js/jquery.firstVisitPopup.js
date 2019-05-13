@@ -55,7 +55,7 @@
 		}
 
 		$(settings.showAgainSelector).on('click', showMessage);
-		$body.on('click', '#fvpp-blackout, #fvpp-close', hideMessage);
+		$body.on('click', '#fvpp-blackout, #fvpp-close, #startReading', hideMessage);
 
 	};
 

@@ -105,7 +105,10 @@
 
         <!-- FOOTER BAR -->
         <section id="footer">
-          <div class="sound">Sound On <i class="fas fa-volume-up"></i><p><a id="show-message">Show intro again</a></p></div>
+          <div class="sound">
+            <p>Sound On <i class="fas fa-volume-up"></i><br>
+            <a id="show-message">How to use the book</a></p>
+          </div>
           <ul class="footnav">
             <li style="margin-top: auto;margin-bottom: auto;">Share</li>
             <!-- <li><i class="fab fa-facebook-square"></i></li> -->
@@ -145,43 +148,30 @@
 
       <!-- INTRO TEXT GOES HERE -->
       <div id="my-welcome-message">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="false" data-interval="false">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div style="display: flex; flex-direction: row;">
-                <div style="padding-right: 10px; flex-basis: 50%;">
-                  <h3>First Slide</h3>
-                  <p>Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.</p>
+              <div class="carousel-content">
+                <div style="padding-right: 10px;">
+                  <h3>Click or drag on the corners to open the book and turn the pages.</h3>
                 </div>
-                <div style="flex-basis: 50%;">
-                  <img class="d-block w-100" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" alt="First slide">
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div style="display: flex; flex-direction: row;">
-                <div style="padding-right: 10px; flex-basis: 50%;">
-                  <h3>Second Slide</h3>
-                  <p>Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.</p>
-                </div>
-                <div style="flex-basis: 50%;">
-                  <img class="d-block w-100" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" alt="First slide">
+                <div style="flex-basis: 50%;" class="introImg">
+                  <img class="d-block w-100" src="static/img/intro-img-1.png" alt="Click or drag the corners.">
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div style="display: flex; flex-direction: row;">
-                <div style="padding-right: 10px; flex-basis: 50%;">
-                  <h3>Third Slide</h3>
-                  <p>Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.Lorem ipsum Cupidatat quis pariatur anim.</p>
+              <div class="carousel-content">
+                <div style="padding-right: 10px;">
+                  <h3>Click on the buttons to hear the animal sounds. Click again to stop.</h3>
+                  <button id="startReading">Start Reading</button>
                 </div>
-                <div style="flex-basis: 50%;">
-                  <img class="d-block w-100" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" alt="First slide">
+                <div style="flex-basis: 50%;" class="introImg">
+                  <img class="d-block w-100" src="static/img/intro-img-2.png" alt="Click the buttons to play, click again to stop.">
                 </div>
               </div>
             </div>
