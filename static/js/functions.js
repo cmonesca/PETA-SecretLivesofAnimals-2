@@ -16,11 +16,13 @@ $(window).ready(function() {
         if(page>1) {
           $('#petaBookBg').addClass('peta-book-bg');
           $('#soundBar').addClass('margin-left');
-          $('.bookContainer').addClass('changed');
+          $('#petaBookBg').addClass('bookShadow-open');
+          $('#bookShadowClosed').addClass('display-none');
         } else {
           $('#petaBookBg').removeClass('peta-book-bg');
           $('#soundBar').removeClass('margin-left');
-          $('.bookContainer').removeClass('changed');
+          $('#petaBookBg').removeClass('bookShadow-open');
+          $('#bookShadowClosed').removeClass('display-none');
         }
         if(page!==1) {
           $('#introText').addClass('display-none');
@@ -87,8 +89,6 @@ $(window).ready(function() {
       mice.pause();
     }
   })
-
-  // introJs().start();
 
 });
 

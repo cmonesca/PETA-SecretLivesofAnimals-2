@@ -150,30 +150,36 @@ body{
 		align-items: center;
 		right: 5%;
 		position: absolute;
-		/* overflow: hidden; */
 	}
 
+	#post-headline:after{
+  content: " ";
+  position:absolute;
+  width: 90%;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  z-index:-1;
+  -moz-box-shadow: 0px 5px 4px #888;
+  -webkit-box-shadow: 0px 5px 4px #888;
+  box-shadow: 0px 5px 4px #888;
+}
 
-	/* BOOK SHADOW */
-	/* .bookContainer::before {
-		content: '';
-		background-image: url(../img/shadow-closed.png);
-		background-size: contain;
-		width: 831px;
-    height: 700px;
-    right: -7%;
-		position:absolute;
+	#bookShadowClosed {
+		width: 641px;
+		height: 523px;
+		right: 0;
+		position: absolute;
+		-webkit-box-shadow: 0px 0px 136px 15px rgba(0,0,0,0.55);
+			 -moz-box-shadow: 0px 0px 136px 15px rgba(0,0,0,0.55);
+						box-shadow: 0px 0px 136px 15px rgba(0,0,0,0.55);
 	}
 
-	.bookContainer.changed::before {
-		content: '';
-		background-image: url(../img/shadow-open.png);
-		width: 100vw;
-		height: 100vh;
-		background-size: 1500px 814px;
-    background-position: 0% 60%;
-		background-repeat: no-repeat;
-	} */
+	.bookShadow-open {
+		-webkit-box-shadow: 0px 0px 136px 15px rgba(0,0,0,0.55);
+			 -moz-box-shadow: 0px 0px 136px 15px rgba(0,0,0,0.55);
+						box-shadow: 0px 0px 136px 15px rgba(0,0,0,0.55);
+	}
 
 	#petaBook{
 		display: block;
@@ -241,7 +247,7 @@ body{
 	}
 
 	.sound-bar {
-		margin-top: 0.23rem;
+		/* margin-top: 0.23rem; */
     margin-left: 1.8rem;
 		z-index: 1;
 	}
@@ -268,20 +274,6 @@ body{
 		width: 513px;
 		height: 524px;
 	}
-
-	/*
-	.bookContainer .shadow{
-		-webkit-transition: -webkit-box-shadow 0.5s;
-		-moz-transition: -moz-box-shadow 0.5s;
-		-o-transition: -webkit-box-shadow 0.5s;
-		-ms-transition: -ms-box-shadow 0.5s;
-
-		-webkit-box-shadow:0 0 20px #333333;
-		-moz-box-shadow:0 0 20px #333333;
-		-o-box-shadow:0 0 20px #333333;
-		-ms-box-shadow:0 0 20px #333333;
-		box-shadow:0 0 20px #333333;
-	} */
 
 	/* INTRO WALKTHROUGH MODAL */
 	#fvpp-blackout {
