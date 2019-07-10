@@ -1,0 +1,153 @@
+/*------ MOBILE MEDIA QUERIES ------*/
+    /* iPhone X - LANDSCAPE */
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape) {
+
+      body {
+        padding-top: constant(safe-area-inset-top);
+        padding-right: constant(safe-area-inset-right);
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-left: constant(safe-area-inset-left);
+      }
+
+    .bookContainer {
+      top: 15%;
+      right: 7%;
+    }
+
+     #petaBook {
+       width: 624px !important;
+       height: 320px !important;
+     }
+
+     .peta-book-bg {
+       width: 712px;
+       height: 320px;
+       left: 22px;
+     }
+
+     .even, .odd {
+       background-size: 312px 320px !important;
+     }
+
+     .odd .page {
+       width: 312px;
+       height: 320px;
+     }
+
+     .even .page {
+       width: 312px;
+       height: 320px;
+     }
+
+     #soundBar img {
+       width: 78px;
+       height: 320px;
+     }
+
+     .hard .p1 {
+       width: 312px;
+       height: 320px;
+     }
+
+     #bookShadowClosed {
+       width: 390px;
+       height: 320px;
+     }
+
+     #footer {
+       bottom: -1em;
+     }
+
+     #introText {
+       left: -22%;
+     }
+
+     #my-welcome-message {
+       width: 55%;
+       top: 15%;
+       left: 24%;
+     }
+
+      #footer {
+        bottom: 0px !important;
+        margin-top: 0px;
+        padding-top: 20px;
+      }
+
+      #navContainer .logo img {
+        margin-left: 9px;
+      }
+
+      /* FACTS PAGE */
+      #factsPage ul {
+        padding-left: 0px !important;
+      }
+
+      #factsPage {
+        height: auto;
+      }
+
+      .factsContainer {
+    		width: 95%;
+    		height: 100%;
+    	}
+
+    	.factsList {
+    		width: 100%;
+    	}
+    }
+
+    /* iPhone X - PORTRAIT */
+    @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait) {
+      /* FACTS PAGE */
+      #factsPage ul {
+        padding-left: 0px !important;
+      }
+
+      .factsContainer {
+        width: 95% !important;
+        height: 100%;
+      }
+
+      .factsList {
+        width: 100%;
+      }
+    }
+
+
+
+
+/*------ TABLET MEDIA QUERIES ------*/
+    /* iPad - LANDSCAPE */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+      /* STYLES GO HERE */
+    }
+
+    /* iPad - PORTRAIT */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) { /* STYLES GO HERE */ }
+
+
+/*------ DESKTOP MEDIA QUERIES ------*/
+
+
+
+
+
+/*------ LARGE SCREEN MEDIA QUERIES ------*/
+@media screen and (min-width: 1400px) {
+  /* STYLES GO HERE */
+}

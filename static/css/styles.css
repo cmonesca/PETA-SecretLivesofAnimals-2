@@ -4,7 +4,7 @@
 /* UNIVERSAL STYLES */
 body{
 	background-color: #f8f8f8;
-	margin: none !important;
+	margin: 0 !important;
 }
 
 .loader {
@@ -431,7 +431,7 @@ body{
 	#factsPage {
 		background:url(../img/bg-facts.jpg) no-repeat;
 		background-size: cover;
-		height: 100vh;
+		background-attachment: fixed;
 		width: 100vw;
 		font-family: 'Nunito', sans-serif;
 		color: white;

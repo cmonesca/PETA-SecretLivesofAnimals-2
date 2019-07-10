@@ -2,7 +2,6 @@
 
 $(window).ready(function() {
   $('#petaBook').turn({
-    // display: 'double',
     width: '1025px',
     height: '524px',
     elevation: 50,
