@@ -534,13 +534,17 @@ body{
 	#helpPage {
 		background:url(../img/bg-help.jpg) no-repeat;
 		background-size: cover;
-		height: 100vh;
+		background-attachment: fixed;
+		/* height: 100vh; */
 		width: 100vw;
 		font-family: 'Nunito', sans-serif;
 		color: white;
 		letter-spacing: 0.5px;
 	}
 
+
+
+/* MIGHT NOT NEED ANY OF THE BELOW */
 	.helpContainer {
 		width: 50%;
 		height: 80%;
@@ -552,8 +556,9 @@ body{
 
 	.helpIntro {
 		font-size: 18px;
-		/* line-height: 42px; */
-		align-self: center;
+		/* align-self: center; */
+		text-align: center;
+		margin-bottom: 2em;
 	}
 
 	.helpIntro h1 {
